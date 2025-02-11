@@ -1,5 +1,7 @@
 # AlfredWorkflow-DeepSeek
 
+[简体中文 ReadMe](./readme.zh.md)
+
 DeepSeek Alfred Workflow. Inspired from [Alfred Team ChatGPT / DALL-E workflow](https://alfred.app/workflows/alfredapp/openai/).
 
 ## Setup
@@ -16,7 +18,7 @@ Note: If you are using [Tencent Cloud Wrap API](https://cloud.tencent.com/docume
 
 ### DeekSeek
 
-Query DeekSeek via the `deekseek` keyword, the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/), or the [Fallback Search](https://www.alfredapp.com/help/features/default-results/fallback-searches/).
+Query DeekSeek via the `deepseek` keyword, the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/), or the [Fallback Search](https://www.alfredapp.com/help/features/default-results/fallback-searches/).
 
 ![Start DeekSeek query](images/about/deepseekkeyword.png)
 
