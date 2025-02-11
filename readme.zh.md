@@ -2,6 +2,9 @@
 
 DeepSeek 的 Alfred Workflow（Alfred 工作流 / 插件）。灵感来源于 [官方 ChatGPT Workflow](https://alfred.app/workflows/alfredapp/openai/)。
 
+## 下载
+
+[下载地址](https://github.com/Jeff2Ma/AlfredWorkflow-DeepSeek/releases)
 ## 配置步骤
 
 1. 创建 [DeepSeek 账户](https://platform.deepseek.com/)并登录

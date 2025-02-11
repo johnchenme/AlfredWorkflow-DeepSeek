@@ -4,6 +4,12 @@
 
 DeepSeek Alfred Workflow. Inspired from [Alfred Team ChatGPT / DALL-E workflow](https://alfred.app/workflows/alfredapp/openai/).
 
+## Download
+
+[https://github.com/Jeff2Ma/AlfredWorkflow-DeepSeek/releases
+](https://github.com/Jeff2Ma/AlfredWorkflow-DeepSeek/releases)
+
+
 ## Setup
 
 1. Create an DeepSeek account and [log in](https://platform.deepseek.com/).
