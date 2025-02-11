@@ -20,7 +20,7 @@ DeepSeek 的 Alfred Workflow（Alfred 工作流 / 插件）。灵感来源于 [�
 
 通过以下方式调用：
 
-- 关键词 `deekseek`
+- 关键词 `deepseek`
 
 - [全局动作](https://www.alfredapp.com/help/features/universal-actions/)
 
@@ -35,9 +35,9 @@ DeepSeek 的 Alfred Workflow（Alfred 工作流 / 插件）。灵感来源于 [�
 * <kbd>⌃</kbd>+<kbd>↩</kbd> 复制完整对话
 * <kbd>⇧</kbd>+<kbd>↩</kbd> 停止生成回复
 
-#### 对话历史管理
+### 对话历史管理
 
-在 `chatgpt` 关键词界面使用 ⌥↩ 查看历史记录，每条记录显示首问为标题，末问为副标题
+在 `deepseek` 关键词界面使用 ⌥↩ 查看历史记录，每条记录显示首问为标题，末问为副标题
 
 ![查看历史记录](images/about/deepseekhistory.png)
 
