@@ -71,13 +71,11 @@ function startStream(apiEndpoint, apiKey, apiOrgHeader, model, systemPrompt, con
   task.executableURL = $.NSURL.fileURLWithPath("/usr/bin/curl")
   task.arguments = [
     apiEndpoint,
-    "--speed-limit", "0", "--speed-time", "5", // Abort stalled connection after a few seconds
-    "--silent", "--no-buffer",
     "--header", "Content-Type: application/json",
-    "--header", `Authorization: Bearer ${apiKey}`,
+    "--header", `api-key: ${apiKey}`,
     "--data", JSON.stringify({ model: model, messages: messages, stream: true }),
     "--output", streamFile
-  ].concat(apiOrgHeader)
+  ]
 
   task.standardOutput = stdout
   task.launchAndReturnError(false)
@@ -199,8 +197,8 @@ function run(argv) {
   const apiOrgHeader = envVar("openai_org_id") ? ["--header", `OpenAI-Organization: ${envVar("openai_org_id")}`] : []
   const systemPrompt = envVar("system_prompt")
   const model = envVar("chatgpt_model_override") ? envVar("chatgpt_model_override") : envVar("gpt_model")
-  const apiEndpointInit = ((model === 'deepseek-r1' || model === 'deepseek-v3') ? 'https://api.lkeap.cloud.tencent.com/v1/chat/completions' :  envVar("chatgpt_api_endpoint")) || "https://api.deepseek.com/v1/chat/completions"
-  const apiEndpointInitHasPath = apiEndpointInit.replace(/^https?:\/\//, "").includes("/")
+  const apiEndpointInit = "https://ai-johnchenme8499ai179135996748.services.ai.azure.com/models/chat/completions?api-version=2024-05-01-preview"
+  const apiEndpointInitHasPath = "https://ai-johnchenme8499ai179135996748.services.ai.azure.com/models/chat/completions?api-version=2024-05-01-preview"
   const apiEndpoint = apiEndpointInitHasPath ? apiEndpointInit : `${apiEndpointInit}/v1/chat/completions`
   const chatFile = `${envVar("alfred_workflow_data")}/chat.json`
   const pidStreamFile = `${envVar("alfred_workflow_cache")}/pid.txt`
